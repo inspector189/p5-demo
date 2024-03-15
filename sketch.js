@@ -10,7 +10,7 @@ function setup() {
   colorMode(HSB, 360);
 
   var controls = createDiv('');
-  controls.position(150, 520);
+  controls.position(500, 125);
 
   var dLabel = createP('D (denominator) value:');
   dLabel.parent(controls);
