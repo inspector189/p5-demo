@@ -11,16 +11,16 @@ function setup() {
   colorMode(HSB, 360);
 
   var controls = createDiv('');
-  controls.position(495, 80);
+  controls.position(495, 200);
 
   var dLabel = createP('D (denominator) value:');
   dLabel.parent(controls);
-  sliderD = createSlider(1, 20, 1, 1);
+  sliderD = createSlider(1, 20, 19, 1);
   sliderD.parent(controls);
 
   var nLabel = createP('N (numerator) value:');
   nLabel.parent(controls);
-  sliderN = createSlider(1, 20, 1, 1);
+  sliderN = createSlider(1, 20, 20, 1);
   sliderN.parent(controls);
 
   var colorLabel = createP('Vertex color:');
@@ -35,7 +35,7 @@ function setup() {
 
   var fovLabel = createP("Radius value: ");
   fovLabel.parent(controls);
-  fovSlider = createSlider(10, 300, 10, 0);
+  fovSlider = createSlider(10, 300, 150, 0);
   fovSlider.parent(controls);
 
   sliderD.input(draw);
@@ -52,7 +52,7 @@ function draw() {
   var fov = fovSlider.value();
   var hue = sliderColor.value();
   var strWeight = weightStrokeSlider.value();
-  background(60);
+  background(0);
   translate(width/2, height/2);
   beginShape();
   noFill();

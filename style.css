@@ -1,7 +1,78 @@
+* {
+  overflow-x: hidden;
+}
 html, body {
   margin: 0;
+  background-color: rgb(60, 60, 60);
   padding: 0;
+  
 }
 canvas {
   display: block;
+}
+body, h1, p, a {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif; 
+  text-decoration: none; 
+}
+h1, h2 {
+  color: white; 
+  text-align: center;
+  text-shadow: 0 0 10px white; 
+}
+p {
+  color:white;
+}
+iframe {
+  width: 100%;
+  border: none;
+  margin-top: 50px; /* usuwanie obramowania dla osadzonych ramek */
+  margin-left: 10%;
+}
+a {
+  color: white; 
+}
+a:hover, a:focus {
+  color: lightblue;
+}
+a:visited {
+  color: lightgrey;
+}
+
+/* Stylowanie suwaka */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px; /* Zmniejszona wysokość */
+  background: #ddd;
+  outline: none;
+  border-radius: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px; /* Szerokość kciuka suwaka */
+  height: 20px; /* Wysokość kciuka suwaka */
+  background: #4CAF50;
+  cursor: pointer;
+  border-radius: 50%;
+}
+footer {
+  color: white;
+  background-color: rgb(26, 26, 26);
+  font-size: 12px; /* Mała czcionka */
+  text-align: left; /* Tekst do lewej strony */
+  padding: 10px; /* Dodanie paddingu */
+}
+header {
+  background-color: rgb(26, 26, 26);
+  padding: 50px;
+}
+#scroll {
+  max-height: calc(100vh - 245px); /* Ograniczenie wysokości diva, aby pasował do reszty okna przeglądarki minus wysokość nagłówka i stopki */
+  overflow-y: auto; /* Włączenie pionowego przewijania tylko wewnątrz diva */
+  padding: 20px;
+  text-align:center;
+  
 }
