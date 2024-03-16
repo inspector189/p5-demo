@@ -10,15 +10,19 @@ html, body {
 canvas {
   display: block;
 }
-body, h1, p, a {
+body, h1, p, a, h2 {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif; 
   text-decoration: none; 
 }
-h1, h2 {
+h1 {
   color: white; 
   text-align: center;
+  text-shadow: 0 0 10px white; 
+}
+h2 {
+  color: white; 
   text-shadow: 0 0 10px white; 
 }
 p {
