@@ -12,17 +12,14 @@ function setup() {
 
   var controls = createDiv('');
   controls.position(495, 200);
-
   var dLabel = createP('D (denominator) value:');
   dLabel.parent(controls);
   sliderD = createSlider(1, 20, 19, 1);
   sliderD.parent(controls);
-
   var nLabel = createP('N (numerator) value:');
   nLabel.parent(controls);
   sliderN = createSlider(1, 20, 20, 1);
   sliderN.parent(controls);
-
   var colorLabel = createP('Vertex color:');
   colorLabel.parent(controls);
   sliderColor = createSlider(0, 360, 0, 0);
