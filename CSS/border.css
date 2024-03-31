@@ -1,0 +1,46 @@
+header::before,
+header::after {
+    content: '';
+    z-index: 0;
+    position: absolute;
+    width: calc(99% + 30px);
+    height: calc(7.5% + 30px);
+    top: -15px;
+    left: -15px;
+    border-radius: 16px;
+    background: linear-gradient(45deg,
+    #262626, #262626, #262626, rgb(200, 230, 201), rgb(200, 230, 201), #262626, #262626,
+        #262626, #262626, rgb(200, 230, 201), rgb(200, 230, 201), rgb(200, 230, 201), #262626b9, #262626
+    );
+    background-size: 400%;
+    animation: border 50s linear infinite;
+}
+
+.borderek::before,
+.borderek:after {
+  content: '';
+  z-index: 0;
+  position: fixed;
+  left: 19.75%;
+  right: 50%;
+  width: 60.5%;
+  height: 52%;
+  top: 177px;
+  bottom: 200px;
+  border-radius: 8px;
+  background: linear-gradient(100deg,
+  #262626, #262626, #262626, rgb(200, 230, 201), rgb(200, 230, 201), #262626, #262626,
+      #262626, #262626, rgb(200, 230, 201), rgb(200, 230, 201), rgb(200, 230, 201), #262626b9, #262626
+  );
+  background-size: 500%;
+  animation: border 50s linear infinite;
+}
+@keyframes border {
+    0%, 100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 300%;
+    }
+}
