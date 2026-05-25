@@ -6,8 +6,8 @@ html, body {
   margin: 0;
   padding: 0;
   min-height: 100%;
-  background-color: rgb(26, 26, 26);
   font-family: Arial, sans-serif;
+  background: rgb(20, 20, 20);
   color: white;
 }
 
@@ -19,71 +19,77 @@ body {
 
 .box {
   position: fixed;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  height: 55px;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1000px, 92%);
+  height: 58px;
+
   display: flex;
   align-items: center;
-  background: rgb(26, 26, 26);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 10px;
+  justify-content: space-between;
+
+  padding: 0 14px;
+
+  background: rgba(30, 30, 30, 0.75);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+
   z-index: 1000;
-  padding: 0 10px;
 }
 
 main {
   flex: 1;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 100px 20px 40px;
+  padding: 120px 20px 60px;
 }
 
 #border-style {
-  width: min(700px, 90%);
+  width: min(720px, 92%);
   padding: 40px;
+
+  background: rgba(255,255,255,0.03);
   border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 12px;
-  background: rgba(255,255,255,0.02);
-}
+  border-radius: 18px;
 
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+
+  text-align: center;
+}
 h1 {
-  font-size: 42px;
+  font-size: 44px;
   font-weight: 300;
-  margin-bottom: 20px;
-}
-
-#description {
-  font-size: 15px;
-  line-height: 1.6;
-  opacity: 0.85;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
 }
 
 #vl {
   width: 60px;
   height: 2px;
+  margin: 18px auto;
   background: rgb(123, 153, 124);
-  margin: 20px auto;
   border-radius: 2px;
 }
 
+#description {
+  font-size: 15px;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+
 footer {
-  margin-top: auto;
-  padding: 12px;
-  font-size: 12px;
   text-align: center;
-  opacity: 0.7;
+  font-size: 12px;
+  padding: 14px;
+  opacity: 0.6;
+  margin-top: auto;
 }
 
 a {
-  color: #a3a3a3;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #e2e2e2;
-  text-decoration: underline;
+  color: inherit;
 }
