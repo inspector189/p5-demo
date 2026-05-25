@@ -1,25 +1,54 @@
 .borderek {
   position: relative;
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+
+.borderek::before {
+  content: '';
+  position: absolute;
+  inset: -200px; /* robi “glow” poza ekran */
+
+  background: linear-gradient(
+    120deg,
+    rgb(30,30,30),
+    rgb(30,30,30),
+    rgb(120,150,120),
+    rgb(120,150,120),
+    rgb(30,30,30)
+  );
+
+  background-size: 300%;
+  animation: border 40s linear infinite;
+
+  filter: blur(60px);
+  opacity: 0.35;
+
   z-index: 0;
 }
 
-.borderek::before,
 .borderek::after {
   content: '';
-  z-index: -1;
   position: absolute;
-  inset: -3px;
-  border-radius: 8px;
-  background: linear-gradient(
-    100deg,
-    #262626, #262626, #262626,
-    rgb(200, 230, 201), rgb(200, 230, 201),
-    #262626, #262626, #262626, #262626,
-    rgb(200, 230, 201), rgb(200, 230, 201),
-    #262626b9, #262626
+  inset: 0;
+
+  background: radial-gradient(
+    rgba(255,255,255,0.04) 1px,
+    transparent 1px
   );
-  background-size: 500%;
-  animation: border 50s linear infinite;
+
+  background-size: 40px 40px;
+
+  opacity: 0.2;
+
+  z-index: 0;
 }
 
 @keyframes border {

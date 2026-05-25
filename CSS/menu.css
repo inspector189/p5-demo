@@ -25,12 +25,12 @@
 
 .dropdown {
   position: relative;
+  padding-bottom: 8px;
 }
 
 .dropdown-content {
-  display: none;
   position: absolute;
-  top: 42px;
+  top: 100%;
   left: 0;
 
   min-width: 200px;
@@ -43,12 +43,20 @@
   border-radius: 12px;
 
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: 0.2s ease;
+
+  pointer-events: none;
 }
 
 .dropdown-content a {
   display: block;
   padding: 10px 12px;
   border-radius: 8px;
+  margin-top: 6px;
   font-size: 13px;
   color: rgba(255,255,255,0.85);
 }
@@ -58,5 +66,8 @@
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
 }

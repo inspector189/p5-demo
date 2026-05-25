@@ -47,8 +47,10 @@ main {
   padding: 120px 20px 60px;
   text-align: center;
 }
-
 #border-style {
+  position: relative;
+  z-index: 1;
+
   width: min(720px, 92%);
   padding: 40px;
 
@@ -58,11 +60,9 @@ main {
 
   box-shadow: 0 20px 60px rgba(0,0,0,0.4);
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
+
 h1 {
   font-size: 44px;
   font-weight: 300;
