@@ -1,19 +1,29 @@
-.borderek::before,
-.borderek:after {
-  content: '';
+.borderek {
+  position: relative;
   z-index: 0;
-  position: fixed;
-  left: 19.75%;
-  right: 50%;
-  width: 60.5%;
-  height: 52%;
-  top: 177px;
-  bottom: 200px;
+}
+
+.borderek::before,
+.borderek::after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  inset: -3px;
   border-radius: 8px;
-  background: linear-gradient(100deg,
-  #262626, #262626, #262626, rgb(200, 230, 201), rgb(200, 230, 201), #262626, #262626,
-      #262626, #262626, rgb(200, 230, 201), rgb(200, 230, 201), rgb(200, 230, 201), #262626b9, #262626
+  background: linear-gradient(
+    100deg,
+    #262626, #262626, #262626,
+    rgb(200, 230, 201), rgb(200, 230, 201),
+    #262626, #262626, #262626, #262626,
+    rgb(200, 230, 201), rgb(200, 230, 201),
+    #262626b9, #262626
   );
   background-size: 500%;
   animation: border 50s linear infinite;
+}
+
+@keyframes border {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
