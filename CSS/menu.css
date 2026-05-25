@@ -1,11 +1,11 @@
 .navbar {
   display: flex;
   align-items: center;
-  background-color: rgb(26, 26, 26);
-  border-radius: 7px;
+  background: linear-gradient(180deg, rgb(30,30,30), rgb(20,20,20));
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 10px;
   padding: 0 10px;
-  position: relative;
-  z-index: 1000;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
 }
 
 .navbar a {
