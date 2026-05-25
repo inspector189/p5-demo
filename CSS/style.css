@@ -6,7 +6,8 @@ html, body {
   background-color: rgb(26, 26, 26);
   padding: 0;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   
 }
 canvas {
