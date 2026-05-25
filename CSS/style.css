@@ -39,13 +39,13 @@ body {
 
   z-index: 1000;
 }
-
 main {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 120px 20px 60px;
+  text-align: center;
 }
 
 #border-style {
@@ -58,7 +58,10 @@ main {
 
   box-shadow: 0 20px 60px rgba(0,0,0,0.4);
 
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 h1 {
   font-size: 44px;
@@ -71,7 +74,7 @@ h1 {
   width: 60px;
   height: 2px;
   margin: 18px auto;
-  background: rgb(123, 153, 124);
+  background: rgb(85, 120, 90); 
   border-radius: 2px;
 }
 
@@ -98,21 +101,14 @@ a {
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  opacity: 0.6;
+  opacity: 0.5;
   margin-bottom: 10px;
-}
-
-h1 {
-  font-size: 44px;
-  font-weight: 300;
-  margin: 0 0 20px 0;
-  letter-spacing: -0.5px;
 }
 
 .description {
   font-size: 15px;
   line-height: 1.7;
-  opacity: 0.85;
+  opacity: 0.8;
   max-width: 600px;
-  margin: 0 auto;
 }
+
