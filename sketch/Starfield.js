@@ -5,7 +5,7 @@ let numberOfStars;
 
 function setup() {
     canvas = createCanvas(800, 450);
-    canvas.position(500, 100);
+    canvas.position(500, 200);
     angleMode(DEGREES);
     colorMode(HSB, 360);
     var controls = createDiv('');
@@ -13,12 +13,13 @@ function setup() {
     controls.size(200, 200);
     var numLabel = createP("Number Of Stars: ");
     numLabel.parent(controls);
+    numLabel.position(0, -15);
     numberOfStars = createInput('');
     numberOfStars.parent(controls);
     numberOfStars.position(0, 25);
     var speedLabel = createP("Speed Value:");
     speedLabel.parent(controls);
-    speedLabel.position(0, 65);
+    speedLabel.position(0, 50);
     speedValue = createInput('');
     speedValue.parent(controls);
     speedValue.position(0, 90);

@@ -112,3 +112,67 @@ a {
   max-width: 600px;
 }
 
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 90px;
+}
+
+.page-header {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0 10px;
+  margin: 0;
+}
+
+.page-header h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.page-header h3 {
+  font-size: 13px;
+  opacity: 0.6;
+  margin-top: 6px;
+  font-weight: 300;
+}
+
+.page-header a {
+  color: rgb(140, 180, 140);
+  text-decoration: none;
+}
+
+.page-header a:hover {
+  text-decoration: underline;
+}
+
+.canvas-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+}
+
+.panel-left {
+  width: 280px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  border-right: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+}
+
+.panel-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
