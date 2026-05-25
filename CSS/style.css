@@ -93,3 +93,26 @@ footer {
 a {
   color: inherit;
 }
+
+.subtitle {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.5px;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.7;
+  opacity: 0.85;
+  max-width: 600px;
+  margin: 0 auto;
+}
