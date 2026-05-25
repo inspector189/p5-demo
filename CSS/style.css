@@ -1,5 +1,5 @@
 * {
-  overflow-x: hidden;
+  box-sizing: border-box;
 }
 html, body {
   margin: 0;
@@ -7,8 +7,6 @@ html, body {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
-  overflow-y: auto;
-  
 }
 canvas {
   display: block;
@@ -119,7 +117,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow-y: hidden;
+  overflow: visible;
   border: 6px solid rgb(26, 26, 26);
 
 }

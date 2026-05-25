@@ -31,17 +31,3 @@
   ul.topnav li.right, 
   ul.topnav li {float: none;}
 }
-#koto {
-    margin-top: 20px;
-    float: left;
-    left: 70%;
-    margin-top: -10%;
-    margin-left:68%;
-    border-image-source: round;
-  }
-  #dogo {
-    float: left;
-    left: 51%;
-    width: 20%;
-    height: 25%;
-  }
