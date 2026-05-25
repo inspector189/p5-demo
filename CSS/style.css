@@ -149,6 +149,12 @@ a {
   text-decoration: underline;
 }
 
+button,
+input
+{
+  color: black;
+}
+
 .canvas-area {
   flex: 1;
   display: flex;
